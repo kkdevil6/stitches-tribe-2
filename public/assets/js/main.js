@@ -62,3 +62,14 @@ function initGlobe() {
   document.head.appendChild(script);
 }
 initGlobe();
+
+// expose a small helper used by the home page button
+function openQuote(){
+  const q = document.querySelector('.quote-popup');
+  if(!q) return alert('Quote form not available');
+  q.style.display = 'block';
+  const first = q.querySelector('[name="name"]');
+  first && first.focus();
+}
+
+window.openQuote = openQuote;

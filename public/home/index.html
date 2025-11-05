@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>STITCHES TRIBE — Home</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script defer src="/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <header class="fixed top-0 w-full bg-[#001f3f] z-50 shadow-2xl backdrop-blur-md">
+    <div class="container mx-auto flex justify-between items-center p-4 nav-inner">
+      <img src="/assets/images/picture kk/logo/logo.jpg" alt="Stitches Tribe" class="h-16 rounded-full ring-4 ring-cyan ring-offset-2 ring-offset-navy">
+      <h1 class="text-5xl font-black text-cyan glow">STITCHES TRIBE</h1>
+      <button onclick="document.body.classList.toggle('dark')" class="text-4xl hover:scale-110 transition">Moon/Sun</button>
+    </div>
+  </header>
+
+  <section class="relative h-screen">
+    <canvas id="globe" class="fixed inset-0 -z-10"></canvas>
+    <div class="container mx-auto text-center pt-32 text-white px-4">
+      <h2 class="text-6xl font-bold mb-4">Premium Embroidery Since 2010</h2>
+      <p class="text-2xl mb-8">24-Hour Turnaround • Free Quote • Money-Back Guarantee</p>
+      <button onclick="openQuote()" class="px-10 py-5 bg-cyan text-navy text-xl rounded-full hover:scale-110 transition shadow-xl">Get Quote Now</button>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gradient-to-b from-navy to-cyan/20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold text-cyan text-center mb-12 glow">Featured Work</h2>
+      <div id="home-gallery" class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <div class="quote-popup" aria-hidden="false">
+    <form id="quote-form" class="popup-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone">
+      <select name="service">
+        <option>Vector</option><option>Embroidery</option><option>Patches</option>
+        <option>Caps</option><option>Digitizing</option><option>Hoodies</option>
+        <option>Icons</option><option>Leather Jackets</option><option>Leather Patches</option>
+        <option>PVC Patches</option><option>Sportswear</option><option>T-shirt Printing</option>
+      </select>
+      <input type="file" name="design" accept="image/*">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send Quote</button>
+    </form>
+  </div>
+
+  <a href="https://wa.me/+923001234567" class="fixed bottom-8 right-8 bg-green-500 text-white p-6 rounded-full shadow-2xl z-50 animate-bounce hover:animate-none">WhatsApp</a>
+
+  <script>
+    // fetch home gallery images by reading directory index HTML
+    fetch('/assets/images/picture kk/home/')
+      .then(r=>r.text())
+      .then(html=>{
+        const doc = new DOMParser().parseFromString(html,'text/html');
+        const imgs = [...doc.querySelectorAll('a')].map(a=>a.href).filter(h=>h.match(/\.(jpe?g|png|webp)$/i));
+        const gal = document.getElementById('home-gallery');
+        imgs.forEach(src=>{
+          const img = document.createElement('img');
+          img.src = src;
+          img.loading = 'lazy';
+          img.className = 'w-full h-80 object-cover rounded-xl shadow-2xl hover:scale-105 transition duration-300';
+          gal.appendChild(img);
+        });
+      }).catch(()=>{});
+  </script>
+
+  <script src="https://unpkg.com/three@0.132.2/build/three.min.js"></script>
+  <script>
+    // 3D globe
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, innerWidth/innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({canvas: document.getElementById('globe'), alpha: true});
+    renderer.setSize(innerWidth, innerHeight);
+    const globe = new THREE.Mesh(
+      new THREE.SphereGeometry(8, 64, 64),
+      new THREE.MeshBasicMaterial({wireframe:true, color:0x00d4ff})
+    );
+    scene.add(globe);
+    camera.position.z = 15;
+    function spin(){ requestAnimationFrame(spin); globe.rotation.y += 0.003; renderer.render(scene,camera); }
+    spin();
+    window.onresize = () => { camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); };
+  </script>
+</body>
+</html>

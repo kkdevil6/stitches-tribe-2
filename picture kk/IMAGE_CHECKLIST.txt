@@ -1,0 +1,74 @@
+═══════════════════════════════════════════════════════════════
+  STITCHES TRIBE - IMAGE CHECKLIST
+═══════════════════════════════════════════════════════════════
+
+Place all images in: public/images/
+
+╔══════════════════════════════════════════════════════════════╗
+║  ⭐ PRIORITY 1 - LOGO (Add this FIRST!)                      ║
+╚══════════════════════════════════════════════════════════════╝
+  ☐ logo.png (circular logo with needle/thread)
+
+╔══════════════════════════════════════════════════════════════╗
+║  PRIORITY 2 - HOMEPAGE                                        ║
+╚══════════════════════════════════════════════════════════════╝
+  ☐ hero-logo.png
+  ☐ process.jpg
+  ☐ portfolio-1.jpg
+  ☐ portfolio-2.jpg
+  ☐ portfolio-3.jpg
+  ☐ portfolio-4.jpg
+  ☐ portfolio-5.jpg
+  ☐ portfolio-6.jpg
+
+╔══════════════════════════════════════════════════════════════╗
+║  PRIORITY 3 - SERVICE PAGES                                   ║
+╚══════════════════════════════════════════════════════════════╝
+  ☐ digitizing.jpg
+  ☐ vector.jpg
+  ☐ pvc-patches.jpg
+  ☐ embroidery.jpg
+  ☐ leather-patches.jpg
+  ☐ woven-patches.jpg
+  ☐ chenille-patches.jpg
+  ☐ sublimated-patches.jpg
+  ☐ challenge-coin.jpg
+
+╔══════════════════════════════════════════════════════════════╗
+║  PRIORITY 4 - PATCH PAGES                                     ║
+╚══════════════════════════════════════════════════════════════╝
+  ☐ blank-patches.jpg
+  ☐ bullion-patches.jpg
+  ☐ hook-loop-patches.jpg
+  ☐ law-enforcement-patches.jpg
+  ☐ sports-patches.jpg
+  ☐ flag-patches.jpg
+  ☐ name-patches.jpg
+  ☐ printed-patches.jpg
+
+╔══════════════════════════════════════════════════════════════╗
+║  PRIORITY 5 - SPORTSWEAR PAGES                                ║
+╚══════════════════════════════════════════════════════════════╝
+  ☐ embroidered-caps.jpg
+  ☐ hoodies.jpg
+  ☐ custom-shoes.jpg
+  ☐ t-shirt-printing.jpg
+
+╔══════════════════════════════════════════════════════════════╗
+║  PRIORITY 6 - OTHER                                           ║
+╚══════════════════════════════════════════════════════════════╝
+  ☐ about-team.jpg
+  ☐ portfolio-7.jpg
+  ☐ portfolio-8.jpg
+
+═══════════════════════════════════════════════════════════════
+  TOTAL: 34 images
+═══════════════════════════════════════════════════════════════
+
+IMPORTANT:
+  • Add logo.png FIRST - appears on every page!
+  • Image names must match exactly (case-sensitive)
+  • Use JPG for photos, PNG for logos
+  • Optimize images before uploading (keep under 200KB)
+
+

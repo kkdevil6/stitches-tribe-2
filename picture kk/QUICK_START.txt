@@ -1,0 +1,86 @@
+═══════════════════════════════════════════════════════════════
+  QUICK START - ADDING IMAGES TO YOUR WEBSITE
+═══════════════════════════════════════════════════════════════
+
+STEP 1: ADD YOUR LOGO (MOST IMPORTANT!)
+───────────────────────────────────────────────────────────────
+  📁 Location: public/images/
+  📄 File: logo.png
+  ✅ This will appear in the header of EVERY page
+
+STEP 2: COPY YOUR IMAGES
+───────────────────────────────────────────────────────────────
+  Copy all your images into: public/images/
+  
+  Make sure filenames match EXACTLY (case-sensitive):
+  - logo.png (not Logo.png or LOGO.PNG)
+  - hero-logo.png
+  - process.jpg
+  - etc.
+
+STEP 3: CHECK YOUR IMAGES
+───────────────────────────────────────────────────────────────
+  Once images are added, refresh your browser to see them!
+
+═══════════════════════════════════════════════════════════════
+
+WHERE TO GET IMAGES:
+───────────────────────────────────────────────────────────────
+  
+  Option 1: Use your own photos
+    • Take photos of your products
+    • Take a photo of your workspace
+    • Take photos of your team
+  
+  Option 2: Free stock photos
+    • Unsplash.com - Free high-quality photos
+    • Pexels.com - Free photos & videos
+    • Pixabay.com - Free images
+  
+  Option 3: Create graphics
+    • Canva.com - Easy graphic design
+    • Adobe Express - Free design tool
+
+═══════════════════════════════════════════════════════════════
+
+IMAGE FILE NAMES NEEDED:
+───────────────────────────────────────────────────────────────
+
+⭐ MUST HAVE:
+  logo.png
+
+📸 Homepage:
+  hero-logo.png, process.jpg
+  portfolio-1.jpg through portfolio-6.jpg
+
+🎨 Services:
+  digitizing.jpg, vector.jpg, pvc-patches.jpg,
+  embroidery.jpg, leather-patches.jpg, woven-patches.jpg,
+  chenille-patches.jpg, sublimated-patches.jpg,
+  challenge-coin.jpg
+
+🏷️ Patches:
+  blank-patches.jpg, bullion-patches.jpg,
+  hook-loop-patches.jpg, law-enforcement-patches.jpg,
+  sports-patches.jpg, flag-patches.jpg,
+  name-patches.jpg, printed-patches.jpg
+
+👕 Sportswear:
+  embroidered-caps.jpg, hoodies.jpg,
+  custom-shoes.jpg, t-shirt-printing.jpg
+
+📄 Other:
+  about-team.jpg, portfolio-7.jpg, portfolio-8.jpg
+
+═══════════════════════════════════════════════════════════════
+
+TIPS:
+───────────────────────────────────────────────────────────────
+  ✓ Start with logo.png - it's on every page
+  ✓ Use JPG for photos (smaller files)
+  ✓ Use PNG for logos (transparent background)
+  ✓ Optimize images before adding (keep files small)
+  ✓ Check filenames match exactly!
+
+═══════════════════════════════════════════════════════════════
+
